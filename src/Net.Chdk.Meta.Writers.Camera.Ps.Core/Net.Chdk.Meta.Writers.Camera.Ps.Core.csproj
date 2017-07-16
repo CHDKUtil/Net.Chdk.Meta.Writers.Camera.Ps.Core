@@ -2,9 +2,26 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <Description>CHIMP PS camera metadata writers API</Description>
     <RootNamespace>Net.Chdk.Meta.Writers.Camera.Ps</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>0.1.0</Version>
+    <Product>CHIMP</Product>
+    <Copyright>Copyright © 2017 Dmitry Shechtman</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Net.Chdk.Meta.Writers.Camera.Ps.Core</Title>
+    <PackageVersion>$(Version)-alpha</PackageVersion>
+    <Authors>Dmitry Shechtman</Authors>
+    <PackageIconUrl>https://raw.githubusercontent.com/CHDKUtil/CHIMP/master/tiny.png</PackageIconUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/CHDKUtil/Net.Chdk.Meta.Writers.Camera.Ps.Core/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/CHDKUtil/Net.Chdk.Meta.Writers.Camera.Ps.Core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CHDKUtil/Net.Chdk.Meta.Writers.Camera.Ps.Core</RepositoryUrl>
+    <PackageTags>chimp meta writer camera ps core</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -19,12 +36,7 @@
 
   <ItemGroup>
     <PackageReference Include="Net.Chdk.Meta.Model.Camera.Ps" Version="0.1.0-alpha" />
+    <PackageReference Include="Net.Chdk.Meta.Writers.Camera.Core" Version="0.1.0-alpha" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Net.Chdk.Meta.Writers.Camera.Core\src\Net.Chdk.Meta.Writers.Camera.Core\Net.Chdk.Meta.Writers.Camera.Core.csproj" />
-  </ItemGroup>
-
-  <Import Project="..\..\..\Net.Chdk.Core\src\Net.Chdk.Shared\Net.Chdk.Shared.projitems" Label="Shared" />
 
 </Project>
