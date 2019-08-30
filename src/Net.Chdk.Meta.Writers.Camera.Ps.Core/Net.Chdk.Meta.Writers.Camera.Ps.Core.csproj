@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>0.4.0</Version>
-    <VersionPrefix>alpha</VersionPrefix>
+    <Version>0.4.1</Version>
+    <VersionSuffix>alpha</VersionSuffix>
     <Product>CHIMP</Product>
     <Authors>Dmitry Shechtman</Authors>
     <Copyright>Copyright © 2017 Dmitry Shechtman</Copyright>
@@ -17,7 +17,7 @@
   <PropertyGroup>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Net.Chdk.Meta.Writers.Camera.Ps.Core</Title>
-    <PackageVersion>$(Version)-$(VersionPrefix)</PackageVersion>
+    <PackageVersion>$(Version)-$(VersionSuffix)</PackageVersion>
     <PackageLicenseExpression>GPL-2.0-or-later</PackageLicenseExpression>
     <PackageIconUrl>https://raw.githubusercontent.com/CHDKUtil/CHIMP/master/tiny.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/CHDKUtil/Net.Chdk.Meta.Writers.Camera.Ps.Core</PackageProjectUrl>
@@ -36,8 +36,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Net.Chdk.Meta.Model.Camera.Ps" Version="0.2.0-alpha" />
-    <PackageReference Include="Net.Chdk.Meta.Writers.Camera.Core" Version="0.4.0-alpha" />
+    <PackageReference Include="Net.Chdk.Meta.Model.Camera.Ps" Version="0.2.1-alpha" />
+    <PackageReference Include="Net.Chdk.Meta.Writers.Camera.Core" Version="0.4.1-alpha" />
   </ItemGroup>
 
 </Project>
